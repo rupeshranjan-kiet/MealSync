@@ -50,7 +50,7 @@ nav{display:flex;flex-wrap:wrap;gap:18px}
 nav a{color:#4b5563;font-weight:bold;font-size:14px}
 nav a:hover{color:var(--primary)}
 
-/* ---------- PAGE ---------- */
+
 main{max-width:1200px;margin:32px auto;padding:0 24px}
 section{margin-bottom:24px}
 
@@ -110,13 +110,12 @@ h3{font-size:18px}
     margin-bottom:14px;
 }
 
-/* ---------- WELCOME ---------- */
 .welcome-section{padding:30px}
 .welcome-section h2{font-size:30px;margin-bottom:5px}
 .welcome-section p:not(.small-heading),
 .page-header>p:last-child{color:var(--muted)}
 
-/* ---------- REUSABLE GRID ---------- */
+
 .dashboard-cards,
 .menu-cards,
 .quick-actions,
@@ -140,7 +139,7 @@ h3{font-size:18px}
 .upcoming-grid{grid-template-columns:repeat(3,1fr)}
 .admin-actions{grid-template-columns:repeat(4,1fr)}
 
-/* ---------- CARDS ---------- */
+
 .dashboard-card,.menu-card,.activity-stat,.activity-feedback-card,
 .feedback-card,.attendance-card,.demand-card,.upcoming-card,
 .admin-stat-card,.admin-action,.profile-stats article{
@@ -220,7 +219,6 @@ h3{font-size:18px}
     border-radius:10px;
 }
 
-/* ---------- ACTION CARDS ---------- */
 .action-card,.admin-action{
     display:flex;
     align-items:center;
@@ -260,7 +258,7 @@ button:hover,.submit-button:hover,.login-button:hover{opacity:.9}
 .meal-button.active{outline:3px solid #dbeafe}
 .meal-response-status{margin-top:10px;color:var(--success);font-size:13px}
 
-/* ---------- ATTENDANCE ---------- */
+
 .attendance-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .attendance-card{
     display:grid;
@@ -291,7 +289,6 @@ td{font-size:14px}
 .upcoming-status{background:var(--soft);color:var(--primary)}
 .waste-percentage{background:#fee2e2;color:var(--danger)}
 
-/* ---------- FORMS ---------- */
 .feedback-form-section,.complaint-form-section,
 .demand-calculator-section,.waste-record-section,
 .hygiene-audit-section{padding:26px}
@@ -330,7 +327,7 @@ textarea{min-height:110px;resize:vertical}
 }
 .priority-option input{width:auto}
 
-/* ---------- FEEDBACK ---------- */
+
 .rating-section{
     margin-top:20px;
     padding:18px;
@@ -384,7 +381,6 @@ textarea{min-height:110px;resize:vertical}
     font-weight:bold;
 }
 
-/* ---------- ACTIVITY ---------- */
 .activity-stat{display:flex;align-items:center;gap:12px}
 .activity-stat-icon{width:45px;height:45px;flex-shrink:0}
 .activity-stat h3{color:var(--primary)}
@@ -482,7 +478,6 @@ textarea{min-height:110px;resize:vertical}
 .score-circle span{color:var(--primary);font-size:25px;font-weight:bold}
 .score-display{display:flex;align-items:center;gap:20px;margin-top:15px}
 
-/* ---------- LOGIN ---------- */
 .login-page{min-height:100vh;display:grid;place-items:center;padding:20px}
 .login-container{width:100%;max-width:420px}
 .login-card{background:white;padding:30px;border:1px solid var(--border);border-radius:var(--radius);box-shadow:0 10px 30px #dfe5f0}
