@@ -25,7 +25,7 @@ MealSync is a comprehensive web-based platform designed to bridge the gap betwee
 
 ## 📁 Project Structure
 
-The frontend is built using standard HTML5 and CSS3 (`css/style.css`).
+The frontend is built using standard HTML5, CSS3 (`css/style.css`), and JavaScript (`js/main.js`).
 
 ### Core Pages
 *   `login.html` - Unified login portal for students and administrators[cite: 3].
@@ -39,6 +39,9 @@ The frontend is built using standard HTML5 and CSS3 (`css/style.css`).
 *   `food-waste.html` - Sustainability tracker and daily waste entry form[cite: 7].
 *   `hygiene.html` - Daily inspection checklist and audit history[cite: 6].
 
+### JavaScript Implementation
+*   `js/main.js` - Handles client-side interactivity, live attendance tracking and storage, meal demand estimation, food waste auto-calculation, real-time hygiene audit scoring, complaint ticket generation, and user preferences.
+
 ---
 
 ## 🚀 Getting Started
@@ -46,5 +49,5 @@ The frontend is built using standard HTML5 and CSS3 (`css/style.css`).
 Since this is a frontend prototype, no complex server setup is currently required. 
 
 1. Clone or download the repository to your local machine.
-2. Ensure the `css/style.css` file is in its proper directory relative to the HTML files[cite: 1, 2].
+2. Ensure `css/style.css` and `js/main.js` are in their proper directories relative to the HTML files[cite: 1, 2].
 3. Open `login.html` or `index.html` in any modern web browser to start exploring the interface.
