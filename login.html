@@ -2,175 +2,199 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>MealSync - Login</title>
-
+    <title>MealSync - Login & Campus Dining Portal</title>
     <link rel="stylesheet" href="css/style.css">
-    
-
 </head>
 
 <body class="login-page">
 
+    <div class="login-wrapper">
+        <main class="login-split-card">
 
-    <main class="login-container">
-
-
-        <!-- Brand -->
-
-        <section class="login-brand">
-
-            <div class="login-logo">
-                M
-            </div>
-
-            <h1>MealSync</h1>
-
-            <p>
-                Smart mess management for a better campus experience.
-            </p>
-
-        </section>
-
-
-        <!-- Login Card -->
-
-        <section class="login-card">
-
-            <div class="login-heading">
-
-                <p class="small-heading">
-                    WELCOME BACK
-                </p>
-
-                <h2>Sign in to MealSync</h2>
-
-                <p>
-                    Access your meals, attendance and mess updates.
-                </p>
-
-            </div>
-
-
-            <form>
-
-
-                <!-- Email / ID -->
-
-                <div class="login-field">
-
-                    <label for="login-id">
-                        Student ID / Email
-                    </label>
-
-                    <input
-                        type="text"
-                        id="login-id"
-                        name="login-id"
-                        placeholder="Enter your student ID or email"
-                        required>
-
+            <!-- Left Showcase Hero Panel -->
+            <section class="login-hero-panel">
+                <div class="hero-brand-header">
+                    <div class="login-logo-badge">M</div>
+                    <div class="hero-brand-text">
+                        <span class="hero-brand-tag">CAMPUS MESS OS</span>
+                        <h1>MealSync</h1>
+                    </div>
                 </div>
 
+                <div class="hero-headline">
+                    <h2>Smart mess management for a better campus experience.</h2>
+                    <p>Designed for university dining halls to synchronize daily meal attendance, prevent food waste, and maintain stellar kitchen hygiene.</p>
+                </div>
 
-                <!-- Password -->
-
-                <div class="login-field">
-
-                    <div class="password-label">
-
-                        <label for="password">
-                            Password
-                        </label>
-
-                        <a href="#">
-                            Forgot password?
-                        </a>
-
+                <div class="hero-feature-list">
+                    <div class="hero-feature-item">
+                        <div class="feature-icon">🔥</div>
+                        <div class="feature-text">
+                            <strong>Attendance Streak & Rewards</strong>
+                            <p>Maintain your 7-day meal streak to earn an official 2% mess fee reduction voucher.</p>
+                        </div>
                     </div>
 
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Enter your password"
-                        required>
+                    <div class="hero-feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <div class="feature-text">
+                            <strong>Real-Time Meal Operations</strong>
+                            <p>Live menu schedules, attendance forecasting, and dish-by-dish quality ratings.</p>
+                        </div>
+                    </div>
 
+                    <div class="hero-feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <div class="feature-text">
+                            <strong>Role-Based Access Control</strong>
+                            <p>Dedicated portals for students and mess operations administrators with secure authentication.</p>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="hero-footer-note">
+                    <span class="status-dot"></span>
+                    <span>Cloud Sync Active • KIET University Campus</span>
+                </div>
+            </section>
 
-                <!-- Remember -->
+            <!-- Right Form Panel -->
+            <section class="login-form-panel">
+                <div class="login-form-inner">
 
-                <label class="remember-option">
+                    <div class="login-heading">
+                        <p class="small-heading">CAMPUS AUTHENTICATION</p>
+                        <h2>Welcome to MealSync</h2>
+                        <p>Sign in or register to manage your campus dining services.</p>
+                    </div>
 
-                    <input
-                        type="checkbox"
-                        name="remember">
+                    <!-- Tab Switcher -->
+                    <div class="auth-tabs">
+                        <button type="button" class="auth-tab active" id="tab-btn-signin">Sign In</button>
+                        <button type="button" class="auth-tab" id="tab-btn-signup">Create Account</button>
+                    </div>
 
-                    <span>
-                        Remember me
-                    </span>
+                    <!-- Sign In Form -->
+                    <form id="form-signin">
+                        <div class="login-field">
+                            <label for="login-email">Email Address</label>
+                            <input
+                                type="email"
+                                id="login-email"
+                                name="email"
+                                placeholder="e.g. student@mealsync.com"
+                                required>
+                        </div>
 
-                </label>
+                        <div class="login-field">
+                            <div class="password-label">
+                                <label for="login-password">Password</label>
+                                <a href="#" id="link-forgot-pw">Forgot password?</a>
+                            </div>
+                            <input
+                                type="password"
+                                id="login-password"
+                                name="password"
+                                placeholder="Enter your password"
+                                required>
+                        </div>
 
+                        <label class="remember-option">
+                            <input type="checkbox" name="remember" id="login-remember">
+                            <span>Remember me on this campus device</span>
+                        </label>
 
-                <!-- Login -->
+                        <button
+                            type="submit"
+                            class="login-button"
+                            id="btn-submit-signin">
+                            Sign In
+                        </button>
+                    </form>
 
-                <button
-                    type="submit"
-                    class="login-button">
+                    <!-- Sign Up Form (hidden by default) -->
+                    <form id="form-signup" style="display: none;">
+                        <div class="login-field">
+                            <label for="signup-name">Full Name</label>
+                            <input
+                                type="text"
+                                id="signup-name"
+                                name="full_name"
+                                placeholder="e.g. Pratham Arora"
+                                required>
+                        </div>
 
-                    Sign In
+                        <div class="login-field">
+                            <label for="signup-email">Email Address</label>
+                            <input
+                                type="email"
+                                id="signup-email"
+                                name="email"
+                                placeholder="e.g. pratham@kiet.edu"
+                                required>
+                        </div>
 
-                </button>
+                        <div class="login-field">
+                            <label for="signup-password">Password (min 6 characters)</label>
+                            <input
+                                type="password"
+                                id="signup-password"
+                                name="password"
+                                placeholder="Create a secure password"
+                                minlength="6"
+                                required>
+                        </div>
 
+                        <div class="login-field">
+                            <label>Account Role</label>
+                            <div class="role-selector-group">
+                                <label class="role-option-label">
+                                    <input type="radio" name="signup-role" value="student" checked>
+                                    <span>🎓 Student</span>
+                                </label>
+                                <label class="role-option-label">
+                                    <input type="radio" name="signup-role" value="admin">
+                                    <span>🛡️ Mess Admin</span>
+                                </label>
+                            </div>
+                        </div>
 
-            </form>
+                        <button
+                            type="submit"
+                            class="login-button"
+                            id="btn-submit-signup">
+                            Create Account
+                        </button>
+                    </form>
 
+                    <!-- Supabase Security Badge -->
+                    <div class="login-demo-note">
+                        <strong>🔒 Secured by Supabase Cloud Authentication</strong>
+                        <p>Role-based access separation for students and administrators.</p>
+                    </div>
 
-            <!-- Demo Note -->
+                    <!-- Configuration notice if keys are missing on fresh clone -->
+                    <div id="login-config-alert" style="display: none; margin-top: 15px; padding: 12px; background: #fffbeb; border: 1px solid #fef3c7; border-radius: 8px; font-size: 12px; color: #92400e; line-height: 1.5;">
+                        <strong>⚙️ Supabase API Configuration</strong>
+                        <p style="margin-top: 4px;">To connect your own database, copy <code>js/config.example.js</code> to <code>js/config.js</code> and enter your Supabase project URL & anon key.</p>
+                    </div>
 
-            <div class="login-demo-note">
+                    <!-- Footer -->
+                    <p class="login-footer">
+                        &copy; 2026 MealSync • Campus Mess System
+                    </p>
 
-                <strong>Frontend Demo</strong>
+                </div>
+            </section>
 
-                <p>
-                    Authentication will be connected with the
-                    backend in Semester 2.
-                </p>
+        </main>
+    </div>
 
-            </div>
-
-
-            <!-- Admin -->
-
-            <div class="admin-login-link">
-
-                <span>
-                    Are you a mess administrator?
-                </span>
-
-                <a href="admin.html">
-                    Admin Dashboard →
-                </a>
-
-            </div>
-
-        </section>
-
-
-        <!-- Footer -->
-
-        <p class="login-footer">
-            &copy; 2026 MealSync
-        </p>
-
-
-    </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase-client.js"></script>
     <script src="js/main.js"></script>
 </body>
 

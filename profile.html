@@ -58,19 +58,19 @@
         <!-- Profile Overview -->
         <section class="profile-overview">
 
-            <div class="profile-avatar">
+            <div class="profile-avatar" id="profile-avatar-display">
                 PA
             </div>
 
             <div class="profile-main-info">
 
-                <h2>Pratham Arora</h2>
+                <h2 id="profile-name-header">Student</h2>
 
-                <p>
+                <p id="profile-course-header">
                     MCA • Semester 1
                 </p>
 
-                <span class="profile-id">
+                <span class="profile-id" id="profile-id-header">
                     Student ID: MS2026001
                 </span>
 
@@ -78,7 +78,8 @@
 
             <button
                 type="button"
-                class="edit-profile-button">
+                class="edit-profile-button"
+                id="btn-edit-profile">
 
                 Edit Profile
 
@@ -111,8 +112,8 @@
 
                     <span>Name</span>
 
-                    <strong>
-                        Pratham Arora
+                    <strong id="profile-name-detail">
+                        Student
                     </strong>
 
                 </div>
@@ -122,7 +123,7 @@
 
                     <span>Student ID</span>
 
-                    <strong>
+                    <strong id="profile-id-detail">
                         MS2026001
                     </strong>
 
@@ -133,7 +134,7 @@
 
                     <span>Course</span>
 
-                    <strong>
+                    <strong id="profile-course-detail">
                         MCA
                     </strong>
 
@@ -144,7 +145,7 @@
 
                     <span>Semester</span>
 
-                    <strong>
+                    <strong id="profile-sem-detail">
                         1st Semester
                     </strong>
 
@@ -155,8 +156,8 @@
 
                     <span>Email</span>
 
-                    <strong>
-                        student@example.com
+                    <strong id="profile-email-detail">
+                        student@mealsync.com
                     </strong>
 
                 </div>
@@ -166,8 +167,8 @@
 
                     <span>Phone</span>
 
-                    <strong>
-                        +91 XXXXX XXXXX
+                    <strong id="profile-phone-detail">
+                        +91 98765 43210
                     </strong>
 
                 </div>
@@ -277,7 +278,7 @@
 
                         <p>Meals Attended</p>
 
-                        <h3>17</h3>
+                        <h3 id="stat-attended-count">0</h3>
 
                     </div>
 
@@ -292,7 +293,7 @@
 
                         <p>Meals Skipped</p>
 
-                        <h3>4</h3>
+                        <h3 id="stat-skipped-count">0</h3>
 
                     </div>
 
@@ -307,7 +308,7 @@
 
                         <p>Feedback Given</p>
 
-                        <h3>12</h3>
+                        <h3 id="stat-feedback-count">0</h3>
 
                     </div>
 
@@ -322,7 +323,7 @@
 
                         <p>Complaints</p>
 
-                        <h3>3</h3>
+                        <h3 id="stat-complaint-count">0</h3>
 
                     </div>
 
@@ -472,6 +473,9 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase-client.js"></script>
     <script src="js/main.js"></script>
 </body>
 

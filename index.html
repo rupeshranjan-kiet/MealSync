@@ -51,13 +51,71 @@
                     STUDENT DASHBOARD
                 </p>
 
-                <h2>
+                <h2 id="student-greeting">
                     Good Morning, Student! 👋
                 </h2>
 
                 <p>
                     Here's what's happening with your meals today.
                 </p>
+
+            </div>
+
+        </section>
+
+        <!-- Attendance Streak & Fee Reduction Reward -->
+        <section class="streak-section">
+
+            <div class="streak-header">
+
+                <div class="streak-header-left">
+
+                    <div class="streak-fire-icon">🔥</div>
+
+                    <div>
+                        <p class="small-heading">ATTENDANCE REWARD PROGRAM</p>
+                        <h2>Active Streak: <span id="streak-days-display">5</span> Days</h2>
+                        <p style="color:var(--muted);font-size:13px">Consistently mark meals to earn tuition & mess fee reduction vouchers.</p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <span class="streak-pill" id="streak-pill-badge">🔥 Milestone Active</span>
+                </div>
+
+            </div>
+
+            <div class="streak-progress-box">
+
+                <div class="streak-progress-labels">
+                    <span>Target: <strong>7 Days Consecutive Attendance</strong></span>
+                    <span id="streak-progress-percent">5 / 7 Days (71%)</span>
+                </div>
+
+                <div class="streak-progress-bar">
+                    <div class="streak-progress-fill" id="streak-progress-fill" style="width: 71%;"></div>
+                </div>
+
+            </div>
+
+            <div class="streak-reward-card" id="streak-reward-card">
+
+                <div>
+                    <span class="reward-tag">STUDENT INCENTIVE</span>
+                    <h3>🎉 2% Mess Fee Reduction Voucher</h3>
+                    <p>Reward for consistent dining and preventing meal over-preparation. Redeem to apply a 2% deduction to next month's mess charges.</p>
+                    <div class="voucher-meta-row">
+                        <span class="voucher-code-badge">CODE: <strong id="voucher-code-display">MEALSYNC-STREAK-2OFF</strong></span>
+                        <span class="voucher-status-badge voucher-status-available" id="voucher-status-display">✓ Unlocked & Ready</span>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" class="redeem-voucher-btn" id="btn-redeem-voucher">
+                        🎁 Redeem Voucher
+                    </button>
+                </div>
 
             </div>
 
@@ -461,6 +519,9 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/config.js"></script>
+    <script src="js/supabase-client.js"></script>
     <script src="js/main.js"></script>
 </body>
 

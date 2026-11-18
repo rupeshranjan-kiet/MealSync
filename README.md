@@ -39,15 +39,21 @@ The frontend is built using standard HTML5, CSS3 (`css/style.css`), and JavaScri
 *   `food-waste.html` - Sustainability tracker and daily waste entry form.
 *   `hygiene.html` - Daily inspection checklist and audit history.
 
-### JavaScript Implementation
-*   `js/main.js` - Handles client-side interactivity, live attendance tracking and storage, meal demand estimation, food waste auto-calculation, real-time hygiene audit scoring, complaint ticket generation, and user preferences.
+### JavaScript & Database Architecture
+*   `js/config.example.js` - Configuration template for Supabase project credentials. Copy to `js/config.js` for local or deployment setup (untracked in Git for security).
+*   `js/supabase-client.js` - Supabase client integration, authentication state management, role-based route guard, and database CRUD services.
+*   `js/main.js` - Handles client-side interactivity, live attendance tracking and storage, meal demand estimation, food waste auto-calculation, real-time hygiene audit scoring, complaint ticket generation, student streaks, and user preferences.
 
 ---
 
 ## 🚀 Getting Started
 
-Since this is a frontend prototype, no complex server setup is currently required. 
+Since this is a frontend web application with cloud database integration, no complex build server is required:
 
 1. Clone or download the repository to your local machine.
-2. Ensure `css/style.css` and `js/main.js` are in their proper directories relative to the HTML files.
-3. Open `login.html` or `index.html` in any modern web browser to start exploring the interface.
+2. Configure your Supabase credentials securely:
+   ```bash
+   cp js/config.example.js js/config.js
+   ```
+   Open `js/config.js` and insert your Supabase Project URL and Anon Public Key. (Note: `js/config.js` is automatically excluded by `.gitignore` so your keys are never committed).
+3. Open `login.html` or `index.html` in any modern web browser or run with a local static server (e.g. `npx serve` or Python `http.server`).
